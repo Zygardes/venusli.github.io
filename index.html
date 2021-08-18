@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>  <!--Header-->
+        <title>Venus Li's HomePage</title>     <!--Page Title-->
+
+        <link href = "Venus-Homepage.css" type = "text/css" rel = "stylesheet" />
+        <link href = "Venus-Homepage-dark.css" type = "text/css" rel = "stylesheet" />
+    
+
+        <script>
+
+            function myFunction(lightModeOn) {
+                var element1 = document.body;
+                element1.classList.toggle('dark');
+
+                var element2 = document.getElementById("darkmode");
+                if (element2.value=="light")    {
+                    element2.value = "dark";
+                    element2.innerHTML = "&#9728;";
+                    element2.style.backgroundColor = "rgb(250, 233, 246)";
+                    element2.style.color = "rgb(255, 69, 180)";
+                    
+                }   
+                else    {
+                    element2.value = "light";
+                    element2.innerHTML = "&#9790;";
+                    element2.style.backgroundColor = "rgb(115, 2, 143)";
+                    element2.style.color = "rgb(250, 233, 246)";
+                }
+            }
+
+            function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            window.onload = function()  {
+                document.getElementById("defaultOpen").click();
+            }
+
+        </script>
+
+    </head>
+
+    <body>
+        <div id = "bgColor">
+            <header>
+                <h1>Venus V. Li</h1>
+                <h5>- Web Designer/Computer Engineer -</h5>
+            </header>
+            
+            <div id = "content">
+                <div id = "flexing">
+                    <aside>
+                        <img src = "portrait-photo.png">
+                        <br>
+                        <button value="light" id="darkmode" onclick="myFunction()">☾</button>    
+                    </aside>
+
+                    <div id = "right">
+
+                        <div class = "tab">
+                            <button class="tablinks" onclick="openTab(event, 'contacts')" >Contacts</button>
+                            <button class="tablinks" onclick="openTab(event, 'projects')" >Projects</button>
+                            <button class="tablinks" onclick="openTab(event, 'resume')" id = "defaultOpen">Resume</button>
+                            <button class="tablinks" onclick="openTab(event, 'about')" >About</button>
+                            
+                        </div>
+
+                        <article>
+                            <div id = "about" class = "tabcontent">
+                                <h3>About</h3>
+                                <p> 
+                                    I&#39;m Venus Li! I&#39;m a 20 year old college student majoring in Web Design and Engineering at Santa Clara University. This is a personal homepage I created to display my past coding projects and other information about myself.
+                                    My first experience with CSS that kicked off my interest in coding occurred when I was 13. I was on an art site when I discovered a feature that allowed page customization using CSS, which I had no idea how to read or write at the time. Ever since then, the desire to learn how to use computer languages to design webpages never left my mind. It&#39;s very exciting for me to finally have the opportunity to apply my HTML and CSS skills to a greater cause!
+                                </p>
+                            </div>
+
+                            <div id = "resume" class = "tabcontent">
+                                <h3>Resume</h3>
+                                <p> (If the preview isn't working, click <a href="resume.pdf" download>here</a> to download the pdf.)
+                                    <br><br>
+                                    <iframe src="resume.pdf" height="800" width="100%"></iframe>
+                                </p>
+                            </div>
+
+                            <div id = "projects" class = "tabcontent">
+                                <h3>Projects</h3>
+                                <p> 
+                                    Instructions for running the downloaded programs:
+                                    <ol>
+                                        <li>Click the download link to download the zip file.</li>
+                                        <li>Open the zip file.</li>
+                                        <li>Use a command processor (eg. Terminal) to navigate (cd) to the uncompressed folder.</li>
+                                        <li>Type <b>javac Runner.java</b> to compile the program (a number of .class files will appear in the same folder).</li>
+                                        <li>Finally, type <b>java Runner</b> to run the program in a new window that will appear.</li>
+                                    </ol>
+
+                                    <br>
+                                    Download links to my previous coding projects:
+                                    <br>
+                                    <ul>
+                                        <li><a href="projects/FinalGame.zip" download>Luminary</a> -- An RPG game I made in Java for my HS Senior year's final project. I drew all the game assets and used open-sourced sound effects.</li>
+                                        <li><a href="projects/BlackJack.zip" download>Blackjack</a> -- Another 12th grade Java game. It's a simple game of blackjack that uses a point system to reward players the closer they get to 21. Be careful, as low stands reward zero points and every round costs 1 point.</li>
+                                        <li><a href="projects/MidtermGame.zip" download>Space shooter</a> -- My Senior year's midterm project. Though unpolished, it was a significant difficulty jump that I needed to overcome at the time.</li>
+                                    </ul>
+
+                                </p>
+                            </div>
+
+                            <div id = "contacts" class = "tabcontent">
+                                <h3>Contact me at:</h3>
+                                <p> 
+                                    Email: <a href = "mailto: vli@scu.edu">vli@scu.edu</a>
+                                    <br><br>
+                                    <a href = "https://www.linkedin.com/in/venus-li-5112a4208/">LinkedIn </a>
+                                    <br><br>
+                                    Phone: +1 (408) 679-1436
+                                    
+
+
+                                </p>
+                            </div>
+                        </article>   
+                    </div>
+
+                </div>
+            </div>
+        <footer id = "footer">
+            <p>&copy; 2021 by Venus Li </p>
+        </footer>
+        
+    </div>
+    </body>
+
+</html>
