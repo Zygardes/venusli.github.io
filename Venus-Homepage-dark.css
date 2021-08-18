@@ -50,6 +50,11 @@
     background-color: rgb(55, 9, 119);
   }
 
+ .dark .tab button.active {
+    background-color: rgb(80, 10, 179);
+  }
+  
+
 .dark article   {
     color: rgb(224, 211, 255);
     border: rgb(164, 66, 255) solid 2px;
