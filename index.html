@@ -48,6 +48,12 @@
                 // Show the current tab, and add an "active" class to the button that opened the tab
                 document.getElementById(tabName).style.display = "block";
                 evt.currentTarget.className += " active";
+
+                if (tabName = "resume") {
+                    document.getElementById('resumePreview').src = document.getElementById('resumePreview').src;
+                    
+                }
+                console.log(tabname);
             }
 
             window.onload = function()  {
@@ -96,7 +102,7 @@
                                 <h3>Resume</h3>
                                 <p> (If the preview isn't working, click <a href="resume.pdf" download>here</a> to download the pdf.)
                                     <br><br>
-                                    <iframe src="resume.pdf" height="800" width="100%"></iframe>
+                                    <iframe id = "resumePreview" src="resume.pdf" height="800" width="100%"></iframe>
                                 </p>
                             </div>
 
