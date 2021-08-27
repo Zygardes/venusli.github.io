@@ -63,7 +63,7 @@ h5  {
 
 #content    {
     background-color: #f5d2ed;
-
+    /* width: 90%; */
     display: flex;
     flex-flow: column;
     height: 50%;
@@ -90,13 +90,20 @@ aside     {
     text-align: center;
 }
 
+
 #right {
     width: 70%;
 }
 
 .tab    {
     overflow: hidden;
-
+/* 
+    background-color: rgb(244, 155, 229);
+    border-radius: 10px;
+    
+    margin-left: 50%;
+    margin-right: 20%; 
+*/
     margin-right: 16px; 
 }
 
@@ -113,6 +120,7 @@ aside     {
     font-weight: bold;
     font-size: 16px;
 
+    /* background-color: inherit; */
     background-color: rgb(244, 155, 229);
     float: right;
     border: none;
@@ -136,6 +144,7 @@ article     {
     border: rgb(235, 22, 199) solid 2px;
     border-radius: 20px;
 
+    /* width: 70%; */
     min-width: 200px;
     margin-left: 5%;
 
