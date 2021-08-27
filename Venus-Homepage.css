@@ -50,6 +50,7 @@ header  {
     background-color: rgb(115, 2, 143);
     color: rgb(250, 233, 246);
     font-size: 25px;
+    cursor: pointer;
 }
 
 h1  {
