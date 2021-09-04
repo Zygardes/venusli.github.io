@@ -1,0 +1,62 @@
+.dark * {
+    transition: 0.2s;
+}
+
+.dark a:link  {
+    color:rgb(172, 84, 255);
+}
+
+.dark a:hover {
+    color: rgb(255, 55, 188);
+}
+.dark a:visited {
+    color:rgb(255, 122, 215);
+    background-color: transparent;
+  }
+
+.dark #bgColor       {
+    background-color: rgb(25, 14, 61);
+}
+
+.dark header    {
+    background-color: rgb(29, 15, 75);
+}
+
+.dark h1     {
+    color: rgb(196, 173, 255);
+}
+.dark h5     {
+    color: rgb(161, 133, 230);
+}
+
+.dark #content     {
+    background-color: rgb(22, 11, 56);
+}
+
+.dark aside     {
+    background-color: rgb(46, 16, 102);
+    border: rgb(164, 66, 255) solid 2px;
+}
+
+.dark .tab     {
+    
+}
+
+.dark .tab button  {
+    background-color: rgb(164, 66, 255);
+    color: rgb(233, 225, 255);
+}
+
+.dark .tab button:hover {
+    background-color: rgb(55, 9, 119);
+  }
+
+ .dark .tab button.active {
+    background-color: rgb(80, 10, 179);
+  }
+  
+
+.dark article   {
+    color: rgb(224, 211, 255);
+    border: rgb(164, 66, 255) solid 2px;
+}
