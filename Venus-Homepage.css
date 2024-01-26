@@ -139,7 +139,11 @@ aside     {
     background-color: rgb(253, 187, 255);
   }
   
-
+  
+#portfolio-heading, #projects-heading   {
+    display: flex;
+    justify-content: center;
+}
 
 article     {  
     border: rgb(235, 22, 199) solid 2px;

@@ -49,9 +49,12 @@
                 evt.currentTarget.className += " active";
 
                 if (tabName = "resume") {
-                    document.getElementById('resumePreview').src = document.getElementById('resumePreview').src;
-                    
+                    document.getElementById('resumePreview').src = document.getElementById('resumePreview').src;  
                 }
+                if (tabName = "projects") {
+                    document.getElementById('portfolioPreview').src = document.getElementById('portfolioPreview').src;  
+                }
+                
 //                console.log(tabname);
             }
 
@@ -99,7 +102,7 @@
 
                             <div id = "resume" class = "tabcontent">
                                 <h3>Resume</h3>
-                                <p> (If the preview isn't working, click <a href="resume.pdf" download>here</a> to download the pdf.)
+                                <p> (If the preview isn't working, click <a href="resume.pdf" download>here</a> to download the file.)
                                     <br><br>
                                     <iframe id = "resumePreview" src="resume.pdf" height="800" width="100%"></iframe>
                                 </p>
@@ -108,12 +111,16 @@
                             <div id = "projects" class = "tabcontent">
                                 <h3>Projects</h3>
                                 <p> 
-                                    <ul>
-                                        <li><a href="https://triptrak.vercel.app/index.html">TripTak</a> -- A model for a website that allows users to plan their vacations and read other people's reviews for notable locations.</li>
-                                        
-                                    </ul>
+                                    <h4 id = "portfolio-heading">My UI/UX design portfolio:</h4>
+                                    <p> 
+                                        (If the preview isn't working, click <a href="portfolio.pdf" download>here</a> to download the file.)
+                                    </p>
+                                    <iframe id = "portfolioPreview" src="portfolio.pdf" height="800" width="100%"></iframe>
+                                    <br>
+                                    
+                                    <h4 id = "projects-heading">My coding projects:</h4>                                    
 
-                                    Instructions for running the downloaded programs:
+                                    Instructions for running the downloadable programs:
                                     <ol>
                                         <li>Click one of the download links below to download the zip file.</li>
                                         <li>Unzip the zip file.</li>
