@@ -140,9 +140,15 @@ aside     {
   }
   
   
-#portfolio-heading, #projects-heading   {
+#portfolio-heading, #portfolio-heading   {
     display: flex;
     justify-content: center;
+}
+
+#portfolio-embed  {
+    width: 100%; 
+    height: 25em
+
 }
 
 article     {  
